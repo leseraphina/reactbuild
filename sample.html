@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예약 카드 만들기</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./sample.css">
+</head>
+<body>
+  <article>
+    <h3> 예약 시스템</h3>
+    <!--   -->
+    <div id="appoint">
+      <h4>예약 하기</h4>
+      <ul>
+        <li>
+          <label htmlFor="userName">집사명</label>
+          <input type="text" id="userName">
+        </li>
+        <li>
+          <label htmlFor="userChild">애기명</label>
+          <input type="text" id="userChild">
+        </li>
+        <li>
+          <label htmlFor="userDate">예약일</label>
+          <input type="date"id="userDate">
+        </li>
+        <li>
+          <label htmlFor="userTime">예약 시간</label>
+          <input type="time" id="userTime">
+        </li>
+        <li>
+          <label htmlFor="userMemo">기타설명</label>
+          <textarea cols="30" rows="10" placeholder="기타 설명" id="userMemo"></textarea>
+        </li>
+      </ul>
+      <p><input type="submit" defaultValue="예약하기"></p>
+    </div>
+    <!-- 검색 -->
+    <div id="search">
+      <p>
+        <input type="text" placeholder="search">
+        <button type="button">정렬하기</button>
+      </p>
+      <ul>
+        <li>애기이름</li>
+        <li>예약자명</li>
+        <li>날짜</li>
+        <!-- <li>asc</li>
+        <li>desc</li> -->
+      </ul>
+    </div>
+    <!-- 리스트 -->
+    <div id="list">
+      <ul>
+        <li>
+          <dl>
+            <dt>애기명</dt>
+            <dd class="owner"><dfn>예약자명</dfn>이름</dd>
+            <dd class="desc">설명</dd>
+            <dd class="date">예약일</dd>
+          </dl>
+          <p>
+            <button>delete</button>
+          </p>
+        </li>
+        <li>
+          <dl>
+            <dt>애기명</dt>
+            <dd class="owner"><dfn>예약자명</dfn>이름</dd>
+            <dd class="desc">설명</dd>
+            <dd class="date">예약일</dd>
+          </dl>
+          <p>
+            <button>delete</button>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </article>
+</body>
+</html>
